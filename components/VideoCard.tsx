@@ -35,7 +35,6 @@ const VideoCard: NextPage<IProps> = ({
 
   useEffect(() => {
     if (videoRef?.current) {
-      // if videoRef is not null then video is loaded
       videoRef.current.muted = isVideoMuted; // set video muted state to isVideoMuted state when video is loaded and set isVideoMuted state to video muted state
     }
   }, [isVideoMuted]); // run useEffect when post or isVideoMuted state is changed
